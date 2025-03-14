@@ -632,9 +632,336 @@ footskip=.5in]{geometry}
 	\subsection{نیازمندی‌های خاص}
 	سیستم دارای نیازمندی‌های متعددی است که بر اساس خواسته مشتری در ادامه به طور کامل شرح داده شده‌اند.
 
-			\subsubsection{نیازمندی‌های کارکردی}
-			در این بخش قابلیت‌های سیستم باتوجه‌به نوع و سطح دسترسی کاربران طبقه‌بندی شده‌اند.
-
+	\subsubsection{نیازمندی‌های کارکردی}
+	در این بخش قابلیت‌های سیستم باتوجه‌به نوع و سطح دسترسی کاربران طبقه‌بندی شده‌اند.
+	
+	\begin{itemize}
+		\item
+		\textbf{نیازمندی‌های مدیر سامانه}
+		\begin{enumerate}
+			\renewcommand{\labelenumi}{\rl{{\arabic{enumi}}}R-}
+	
+			\item 
+			سیستم باید امکان مدیریت کاربران را برای مدیریت سامانه فراهم کند.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان فعال یا غیر فعال کردن حساب‌های کاربری را به مدیر سامانه بدهد.
+				\item 
+				سیستم باید امکان تعیین سطوح دسترسی برای کاربران را داشته باشد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان مدیریت ادله دیجیتال را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان اتمام رسیدگی توسط مدیران را داشته باشد.
+				\item 
+				سیستم باید گزارش رسیدگی به مدیران بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان پشتیبانی برای مدیران سامانه داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان ثبت و پیگیری درخواست پشتیبانی برای مدیران سامانه را فراهم کند.
+				\item 
+				سیستم باید امکان گزارش وضعیت درخواست به کاربران را داشته باشد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان رفع شکایات فنی توسط مدیران سامانه را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان بروز رسانی نرم افزاری را داشته باشد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان تحلیل و گزارش مناسب به مدیران سامانه را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان ایجاد داشبوردهای تحلیلی برای مدیران سامانه داشته باشد.
+				\begin{enumerate}
+					\renewcommand{\labelenumiii}{{\rl{\arabic{enumiii}.\arabic{enumii}.\arabic{enumi}}}R-}
+					\item 
+					سیستم باید امکان تحلیل روند شکایت و تراکنش برای مدیران سامانه فراهم کند.
+				\end{enumerate}
+				\item 
+				سیستم باید امکان گزارش از منابع سرور برای مدیران سامانه داشته باشد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان مدیریت ارتباط مدیران و پشتیبانان سامانه با کاربر را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید قابلیت پیگیری سابقه تعاملات کاربران توسط مدیر سامانه را داشته باشد.
+				\item 
+				سیستم باید امکان ارسال اطلاعیه و پیام مدیران به کاربران را داشته باشد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان مدیریت انتقادات و پیشنهادها توسط مدیران سیستم را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان پاسخگویی مدیران به انتقادات را داشته باشد.
+			\end{enumerate}
+		\end{enumerate}
+	
+		\item
+		\textbf{نیازمندی‌های شاکی}
+		\begin{enumerate}
+			\renewcommand{\labelenumi}{\rl{{\arabic{enumi}}}R-}
+			\setcounter{enumi}{8}
+	
+			\item 
+			سیستم باید امکان ثبت‌نام را برای کاربر فراهم سازد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان بارگذاری مدارک لازم برای ثبت‌نام اولیه شامل نام و نام خانوادگی، پست الکترونیک، شماره‌تلفن همراه، نشانی محل سکونت و رمز ملی به کاربر حقیقی بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید به کاربرانى که ثبت نام خود را تکمیل کرده‌اند امکان ورود به حساب کاربری را دهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان ورود به سامانه با کد یک بار مصرف را به کاربر بدهد.
+				\item 
+				سیستم باید امکان ورود به سامانه با رمز عبور را به کاربر بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان ویرایش اطلاعات شخصى را به مشتریان بدهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان ثبت و ویرایش اطلاعات شخصى از جمله نام و نام خانوادگی، شماره تلفن همراه، ایمیل، جنسیت، رمز عبور و کد ملى را به مشتری بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان بارگذاری مستندات تصویر، فیلم، متن و صوت را به کاربر بدهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان بارگذاری مستندات در فرمت‌های مختلف را به کاربر بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان صحت سنجی مستندات را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید تصاویر را با استفاده از تکنیک‌های پردازش تصویر بررسی کند و تصاویر افراد را بر اساس مدل‌های شناسایی اشیا استخراج کند و جهت استفاده در سامانه قرار دهد.
+				\item 
+				سیستم باید صدای افراد را بر اساس تکنیک‌های پردازش صوت بررسی کند و نتیجه شناسایی افراد را در سامانه قرار دهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان به‌روزرسانی اطلاعات پرونده را قبل از تأیید مسئول پرونده به کاربر بدهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان افزودن اطلاعات را به کاربر بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان اطلاع‌رسانی لحظه‌به‌لحظه پرونده را به کاربر بدهد.
+	
+			\item 
+			سیستم باید امکان جستجوی پرونده‌ها را به کاربر بدهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان جستجو پرونده‌ها را بر اساس شماره پرونده، وضعیت پرونده و زمان شکایت به کاربر بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان دیدن نتیجه رأی نهایی را به کاربر بدهد.
+	
+			\item 
+			سیستم باید امکان ارتباط مسئول پرونده و کاربر را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان تبادل پیام بین کاربر و مسئول پرونده را داشته باشد.
+				\item 
+				سیستم باید امکان اعتراض به رأی مسئول پرونده را به کاربر بدهد.
+				\item 
+				سیستم باید امکان تقاضا برای تجدیدنظر نسبت به صحت سنجی مدارک توسط مسئول مربوطه را به کاربر بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان مشاهده پرونده‌های مختومه را به کاربر بدهد.
+	
+			\item 
+			سیستم باید امکان بازیابی اطلاعات پرونده‌های کاربر را به شاکی بدهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان بازیابی اطلاعات ازدست‌رفته و خراب را بدهد.
+				\item 
+				سیستم باید امکان ذخیره سوابق پرونده‌های قبل را برای کاربر فراهم سازد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان ارائه راهنمایی‌های لازم برای تکمیل شکایت را داشته باشد.
+	
+			\item 
+			سیستم باید امکان درخواست حذف شکایت را به کاربر بدهد.
+		\end{enumerate}
+	
+		\item
+		\textbf{نیازمندی‌های متشاکی}
+		\begin{enumerate}
+			\renewcommand{\labelenumi}{\rl{{\arabic{enumi}}}R-}
+			\setcounter{enumi}{18}
+	
+			\item 
+			سامانه باید امکان ارسال دفاعیه توسط کاربر را فراهم کند.
+	
+			\item 
+			سامانه باید قابلیت ارسال درخواست‌های مشاوره قانونی را برای کاربر فراهم کند.
+		\end{enumerate}
+	
+		\item
+		\textbf{نیازمندی‌های مسئول رسیدگی به پرونده}
+		\begin{enumerate}
+			\renewcommand{\labelenumi}{\rl{{\arabic{enumi}}}R-}
+			\setcounter{enumi}{20}
+	
+			\item 
+			سیستم باید امکان اتصال پرونده‌های مرتبط را به یکدیگر به مسئول پرونده بدهد.
+	
+			\item 
+			مسئول پرونده باید امکان ورود به‌حساب کاربری خود را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				مسئول پرونده باید بعد از تأیید دومرحله‌ای به سامانه وارد شود.
+			\end{enumerate}
+	
+			\item 
+			مسئول پرونده باید امکان مشاهده پرونده‌های خود را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				مسئول پرونده باید امکان مشاهده اطلاعات شاکی، متشاکی و مستندات پرونده را داشته باشد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان تحلیل مستندات و ارائه گزارش متنی را به مسئول پرونده بدهد.
+	
+			\item 
+			سیستم باید امکان برسی صحت و اعتبارسنجی پرونده را برای مسئول مربوطه فراهم سازد.
+	
+			\item 
+			سیستم باید امکان ثبت فعالیت و گزارش‌های پرونده را به مسئول پرونده بدهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان اطلاع‌رسانی مراحل پرونده به شاکی، متشاکی و ما فوق را به مسئول پرونده بدهد.
+				\item 
+				سیستم باید امکان ذخیره گزارش‌های پرونده را داشته باشد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید قابلیت ارتباط مسئول پرونده با شاکی، مشتکی‌عنه، مافوق و مدیر سامانه را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان مکاتبه و تعامل با شاکی، متشاکی و مدیر سامانه را برای مسئول پرونده فراهم سازد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان تعلیق پرونده را در صورت کمبود مستندات به مسئول پرونده بدهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان درخواست مستندات بیشتر از شاکی و متشاکی را به مسئول پرونده بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان ارجاع پرونده به مسئولان مربوطه را به مسئول پرونده بدهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان ثبت دلایل ارجاع پرونده را به مسئول پرونده بدهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان مستندسازی انجام شده روی پرونده را فراهم سازد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید به‌صورت خودکار در هر مرحله از بررسی پرونده وقایع را ثبت کند.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان تغییر وضعیت پرونده را به مسئول پرونده بدهد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان تغییر وضعیت پرونده به در حال بررسی، توقف بررسی و پایان بررسی را به مسئول پرونده بدهد.
+			\end{enumerate}
+		\end{enumerate}
+	
+		\item
+		\textbf{قابلیت‌های سیستم}
+		\begin{enumerate}
+			\renewcommand{\labelenumi}{\rl{{\arabic{enumi}}}R-}
+			\setcounter{enumi}{25}
+	
+			\item 
+			سیستم باید امکان ذخیره‌سازی تغییرات مسئول پرونده را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید نسخه‌های پیشین مستندات را ذخیره کند.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان ارائه گزارش‌های آماری از پرونده‌ها را داشته باشد.
+	
+			\item 
+			سیستم باید امکان استفاده از امضای دیجیتال را داشته باشد.
+	
+			\item 
+			سیستم باید مستندات شاکی و متشاکی را به‌صورت رمز شده دربیاورد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید بتواند مستندات را با الگوریتم‌های خاص رمزگذاری کند و امکان دسترسی به افراد دیگر ندهد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان اعلان هوشمند برای اطلاع‌رسانی به کاربران را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید تغییرات پرونده را به شاکی و متشاکی اطلاع‌رسانی کند.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان ارتباط با سایر سیستم‌های قضایی را داشته باشد.
+			\begin{enumerate}
+				\renewcommand{\labelenumii}{{\rl{\arabic{enumii}.\arabic{enumi}}}R-}
+				\item 
+				سیستم باید امکان تبادل از طریق APIهای استاندارد را داشته باشد.
+				\item 
+				سیستم باید امکان ارسال مستقیم مستندات را به مراجع قانونی مرتبط را داشته باشد.
+			\end{enumerate}
+	
+			\item 
+			سیستم باید امکان اتصال به درگاه بانکی را برای کاربر فراهم سازد.
+		\end{enumerate}
+	\end{itemize}
 			\subsubsection{نیازمندی‌های غیرکارکردی}
 			نیازمندی‌های غیرکارکردی، ویژگی‌هایی از یک سیستم هستند که به عملکرد اصلی آن مرتبط نیستند، اما بر روی تجربه کاربری و احساس کلی کاربر از محصول تأثیر به سزایی می‌گذارند. این نیازها شامل امنیت، عملکرد، نگهداری، سازگاری، استفاده‌پذیری و مقیاس‌پذیری می‌شوند. این نیازمندی‌ها، اساسی برای معماری سیستم هستند و در زمان طراحی باید مدنظر قرار گیرند تا سامانه به‌درستی عمل کند و تجربه کاربری مناسبی را برای کاربران فراهم کند. اگر به نیازهای غیرکارکردی توجه نشود؛ احتمال ازدست‌دادن کاربران و جذب‌شدن آنها توسط سیستم‌های مشابه وجود دارد.
 			\begin{itemize}
@@ -926,9 +1253,6 @@ footskip=.5in]{geometry}
 	\section{برنامه تکرار و برنامه مرحله}
 		\vspace{-2em} 
 		\par\noindent\rule{\textwidth}{0.72pt}
-		
-
-
 
 		
 \end{document}
