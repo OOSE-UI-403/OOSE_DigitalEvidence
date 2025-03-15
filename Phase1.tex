@@ -852,13 +852,27 @@ footskip=.5in]{geometry}
 
         \item 
         سیستم باید امکان درخواست حذف شکایت را به کاربر بدهد.
+
+		\item 
+        سیستم باید امکان اعلان هوشمند برای اطلاع‌رسانی به شاکی را داشته باشد.
+        \begin{enumerate}
+            \renewcommand{\labelenumii}{\textbf{.R\arabic{enumi}.\arabic{enumii}}}
+            \item 
+            سیستم باید تغییرات پرونده را به شاکی اطلاع‌رسانی کند.
+
+			\item 
+			سیستم باید مستندات شاکی را به‌صورت رمز شده دربیاورد.
+
+        \end{enumerate}
+
+
     \end{enumerate}
 
     \item
     \textbf{نیازمندی‌های متشاکی}
     \begin{enumerate}
         \renewcommand{\labelenumi}{\textbf{.R\arabic{enumi}}}
-        \setcounter{enumi}{21}
+        \setcounter{enumi}{22}
 
 		
         \item 
@@ -950,20 +964,33 @@ footskip=.5in]{geometry}
             سیستم باید امکان بازیابی اطلاعات ازدست‌رفته و خراب را بدهد.
             \item 
             سیستم باید امکان ذخیره سوابق پرونده‌های قبل را برای کاربر فراهم سازد.
-        \end{enumerate}		git add README.md
+        \end{enumerate}	
 
         \item 
         سامانه باید امکان ارسال دفاعیه توسط کاربر را فراهم کند.
 
         \item 
         سامانه باید قابلیت ارسال درخواست‌های مشاوره قانونی را برای کاربر فراهم کند.
+
+
+		\item 
+        سیستم باید امکان اعلان هوشمند برای اطلاع‌رسانی به متشاکی را داشته باشد.
+        \begin{enumerate}
+            \renewcommand{\labelenumii}{\textbf{.R\arabic{enumi}.\arabic{enumii}}}
+            \item 
+            سیستم باید تغییرات پرونده را به متشاکی اطلاع‌رسانی کند.
+        \end{enumerate}
+
+
+		\item 
+        سیستم باید مستندات متشاکی را به‌صورت رمز شده دربیاورد.
     \end{enumerate}
 
     \item
     \textbf{نیازمندی‌های مسئول رسیدگی به پرونده}
     \begin{enumerate}
         \renewcommand{\labelenumi}{\textbf{.R\arabic{enumi}}}
-        \setcounter{enumi}{35}
+        \setcounter{enumi}{38}
 
         \item 
         سیستم باید امکان اتصال پرونده‌های مرتبط را به یکدیگر به مسئول پرونده بدهد.
@@ -1039,15 +1066,16 @@ footskip=.5in]{geometry}
             \item 
             سیستم باید امکان تغییر وضعیت پرونده به در حال بررسی، توقف بررسی و پایان بررسی را به مسئول پرونده بدهد.
         \end{enumerate}
-    \end{enumerate}
 
-    \item
-    \textbf{قابلیت‌های سیستم}
-    \begin{enumerate}
-        \renewcommand{\labelenumi}{\textbf{.R\arabic{enumi}}}
-        \setcounter{enumi}{46}
+		\item 
+        سیستم باید امکان ارتباط با سایر سیستم‌های قضایی را داشته باشد.
+        \begin{enumerate}
+            \renewcommand{\labelenumii}{\textbf{.R\arabic{enumi}.\arabic{enumii}}}
+            \item 
+            سیستم باید امکان ارسال مستقیم مستندات را به مراجع قانونی مرتبط را داشته باشد.
+		\end{enumerate}	
 
-        \item 
+		\item 
         سیستم باید امکان ذخیره‌سازی تغییرات مسئول پرونده را داشته باشد.
         \begin{enumerate}
             \renewcommand{\labelenumii}{\textbf{.R\arabic{enumi}.\arabic{enumii}}}
@@ -1058,38 +1086,8 @@ footskip=.5in]{geometry}
         \item 
         سیستم باید امکان ارائه گزارش‌های آماری از پرونده‌ها را داشته باشد.
 
-        \item 
-        سیستم باید امکان استفاده از امضای دیجیتال را داشته باشد.
-
-        \item 
-        سیستم باید مستندات شاکی و متشاکی را به‌صورت رمز شده دربیاورد.
-        \begin{enumerate}
-            \renewcommand{\labelenumii}{\textbf{.R\arabic{enumi}.\arabic{enumii}}}
-            \item 
-            سیستم باید بتواند مستندات را با الگوریتم‌های خاص رمزگذاری کند و امکان دسترسی به افراد دیگر ندهد.
-        \end{enumerate}
-
-        \item 
-        سیستم باید امکان اعلان هوشمند برای اطلاع‌رسانی به کاربران را داشته باشد.
-        \begin{enumerate}
-            \renewcommand{\labelenumii}{\textbf{.R\arabic{enumi}.\arabic{enumii}}}
-            \item 
-            سیستم باید تغییرات پرونده را به شاکی و متشاکی اطلاع‌رسانی کند.
-        \end{enumerate}
-
-        \item 
-        سیستم باید امکان ارتباط با سایر سیستم‌های قضایی را داشته باشد.
-        \begin{enumerate}
-            \renewcommand{\labelenumii}{\textbf{.R\arabic{enumi}.\arabic{enumii}}}
-            \item 
-            سیستم باید امکان تبادل از طریق APIهای استاندارد را داشته باشد.
-            \item 
-            سیستم باید امکان ارسال مستقیم مستندات را به مراجع قانونی مرتبط را داشته باشد.
-        \end{enumerate}
-
-        \item 
-        سیستم باید امکان اتصال به درگاه بانکی را برای کاربر فراهم سازد.
     \end{enumerate}
+	
 \end{itemize}
 
 			\subsubsection{نیازمندی‌های غیرکارکردی}
