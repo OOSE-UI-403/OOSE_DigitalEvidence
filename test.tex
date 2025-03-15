@@ -951,7 +951,7 @@ footskip=.5in]{geometry}
             سیستم باید امکان بازیابی اطلاعات ازدست‌رفته و خراب را بدهد.
             \item 
             سیستم باید امکان ذخیره سوابق پرونده‌های قبل را برای کاربر فراهم سازد.
-        \end{enumerate}
+        \end{enumerate}		git add README.md
 
         \item 
         سامانه باید امکان ارسال دفاعیه توسط کاربر را فراهم کند.
@@ -1382,11 +1382,141 @@ footskip=.5in]{geometry}
 
 	\newpage
 	\section{برنامه تکرار و برنامه مرحله}
-	\vspace{-2em} 
-	\par\noindent\rule{\textwidth}{0.72pt}
-	
-	در این پروژه ما از 
-	متدولوژی یکنواخت چابک\footnote{\lr{Agile Unified Methodology}}
-	استفاده می‌کنیم. در ادامه نیازمندی‌های کارکردی را اولویت‌بندی و سپس پیش‌نیازهای هر نیازمندی را مشخص می‌کنیم. در نهایت در جدول \ref{table:longtable1} تعداد مراحل تکرار و نیازمندی‌های مختص به هر تکرار را مشخص می‌کنیم. همچنین در جدول \ref{table:sprints} تاریخ شروع و پایان تکرار‌ها را مشخص کردیم.
+\vspace{-2em} 
+\par\noindent\rule{\textwidth}{0.72pt}
+
+در این پروژه ما از 
+متدولوژی یکنواخت چابک\footnote{\lr{Agile Unified Methodology}}
+استفاده می‌کنیم. در ادامه نیازمندی‌های کارکردی را اولویت‌بندی و سپس پیش‌نیازهای هر نیازمندی را مشخص می‌کنیم. در نهایت در جدول \ref{table:longtable1} تعداد مراحل تکرار و نیازمندی‌های مختص به هر تکرار را مشخص می‌کنیم. 
+
+\begin{longtable}[c]{|c|c|c|c|c|c|}
+    \caption{برنامه تکرار و برنامه مرحله}
+    \label{table:longtable1} \\
+    \hline
+    نیازمندی & اولویت(1/2/3) & وابستگی‌ها & تکرار اول & تکرار دوم & تکرار سوم \\
+    \hline
+    \endfirsthead
+    
+    \multicolumn{6}{c}%
+    {{\bfseries \tablename\ \thetable{} -- ادامه از صفحه قبلی}} \\
+    \hline
+    نیازمندی & اولویت(1/2/3) & وابستگی‌ها & تکرار اول & تکرار دوم & تکرار سوم \\
+    \hline
+    \endhead
+    
+    \hline \multicolumn{6}{|r|}{{ادامه در صفحه بعدی}} \\ \hline
+    \endfoot
+    
+    \hline
+    \endlastfoot
+    
+    R1 & 1 & - & $\checkmark$ & & \\
+    \hline
+    R2 & 1 & - & $\checkmark$ & & \\
+    \hline
+    R3 & 2 & R1 - R2 & & $\checkmark$ & \\
+    \hline
+    R4 & 2 & R3 & & $\checkmark$ & \\
+    \hline
+    R5 & 2 & R3 & & $\checkmark$ & \\
+    \hline
+    R6 & 2 & R3 & & $\checkmark$ & \\
+    \hline
+    R7 & 3 & R5 & & & $\checkmark$ \\
+    \hline
+    R8 & 1 & - & $\checkmark$ & & \\
+    \hline
+    R9 & 1 & R8 & $\checkmark$ & & \\
+    \hline
+    R10 & 2 & R9 & & $\checkmark$ & \\
+    \hline
+    R11 & 2 & R9 & & $\checkmark$ & \\
+    \hline
+    R12 & 3 & R10 - R11 & & & $\checkmark$ \\
+    \hline
+    R13 & 2 & R9 & & $\checkmark$ & \\
+    \hline
+    R14 & 2 & R9 & & $\checkmark$ & \\
+    \hline
+    R15 & 2 & R9 & & $\checkmark$ & \\
+    \hline
+    R16 & 2 & R9 & & $\checkmark$ & \\
+    \hline
+    R17 & 3 & R16 & & & $\checkmark$ \\
+    \hline
+    R18 & 3 & R16 & & & $\checkmark$ \\
+    \hline
+    R19 & 3 & R16 & & & $\checkmark$ \\
+    \hline
+    R20 & 3 & R16 & & & $\checkmark$ \\
+    \hline
+    R21 & 3 & R16 & & & $\checkmark$ \\
+    \hline
+    R22 & 1 & - & $\checkmark$ & & \\
+    \hline
+    R23 & 1 & R22 & $\checkmark$ & & \\
+    \hline
+    R24 & 2 & R22 & & $\checkmark$ & \\
+    \hline
+    R25 & 1 & - & $\checkmark$ & & \\
+    \hline
+    R26 & 2 & R25 & & $\checkmark$ & \\
+    \hline
+    R27 & 2 & R25 & & $\checkmark$ & \\
+    \hline
+    R28 & 3 & R26 - R27 & & & $\checkmark$ \\
+    \hline
+    R29 & 2 & R25 & & $\checkmark$ & \\
+    \hline
+    R30 & 2 & R25 & & $\checkmark$ & \\
+    \hline
+    R31 & 3 & R30 & & & $\checkmark$ \\
+    \hline
+    R32 & 3 & R30 & & & $\checkmark$ \\
+    \hline
+    R33 & 3 & R30 & & & $\checkmark$ \\
+    \hline
+    R34 & 2 & R25 & & $\checkmark$ & \\
+    \hline
+    R35 & 2 & R25 & & $\checkmark$ & \\
+    \hline
+    R36 & 3 & R35 & & & $\checkmark$ \\
+    \hline
+    R37 & 3 & R35 & & & $\checkmark$ \\
+    \hline
+    R38 & 1 & - & $\checkmark$ & & \\
+    \hline
+    R39 & 2 & R38 & & $\checkmark$ & \\
+    \hline
+    R40 & 3 & R39 & & & $\checkmark$ \\
+    \hline
+    R41 & 2 & - & & $\checkmark$ & \\
+    \hline
+    R42 & 3 & R41 & & & $\checkmark$ \\
+    \hline
+    R43 & 2 & - & & $\checkmark$ & \\
+    \hline
+    R44 & 3 & R43 & & & $\checkmark$ \\
+    \hline
+    R45 & 2 & - & & $\checkmark$ & \\
+    \hline
+    R46 & 3 & R45 & & & $\checkmark$ \\
+    \hline
+    R47 & 2 & - & & $\checkmark$ & \\
+    \hline
+    R48 & 3 & R47 & & & $\checkmark$ \\
+    \hline
+    R49 & 2 & - & & $\checkmark$ & \\
+    \hline
+    R50 & 1 & R49 & $\checkmark$ & & \\
+    \hline
+    R51 & 2 & - & & $\checkmark$ & \\
+    \hline
+    R52 & 3 & R51 & & & $\checkmark$ \\
+    \hline
+    R53 & 2 & - & & $\checkmark$ & \\
+\end{longtable}
+
+\newpage
 
 \end{document}
